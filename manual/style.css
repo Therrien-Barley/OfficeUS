@@ -103,50 +103,33 @@ body {
     .document {
       display: block;      
     	}
-    	
-      #border {
-        display: inline;      	
-        
-      position: fixed;
-      bottom: 0px;
-      width: 100%;
-      height: 20px;
-      background-color: red;
-      }    	
- 
-      #limgif {
-      	width: 125px;	
-      display: block;      	
-      		}   
+    		
+  
       		
-          #loading {
-          	position: fixed;
-          	top: 3px;
-          	z-index: 75px;
-          	text-align: center;
-          	color: #ffffff;
-          	width: 100%;
-            display: inline;      	
-          	
-          	}  
-          	
-            #mobile {
-              display: none;  
-            }   
-            
-      #mobile p {
-        color: blue;
-      	font-size: 17px;
-      	line-height: 22px;      
-        padding-bottom: 17px;
-      } 
- 
-      a, a:visited {text-decoration: none;
-      	color: red;}
+#loading {
+  position: fixed;
+  top: 3px;
+  z-index: 75px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  display: inline;      	
+}  
 
-      a:hover {text-decoration: none;
-      	color: red;
-      	}     
+#mobile {
+  display: none;  
+}   
+
+a, a:visited {
+  text-decoration: none;
+  color: red;
+  border-bottom: 1px dotted;
+}
+
+a:hover {text-decoration: none;
+  color: blue;
+  -webkit-animation: zooming .85s linear infinite;
+}     
                   	    		 
     #mobile img {
       border: 3px solid blue;
