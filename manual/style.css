@@ -119,12 +119,12 @@ body {
 
   a, a:visited {
     text-decoration: none;
-    color: red;
-    border-bottom: 1px dotted blue;
+    color: blue;
+    border-bottom: 1px dotted;
   }
 
   a:hover {text-decoration: none;
-    color: blue;
+    color: skyblue;
     -webkit-animation: zooming .85s linear infinite;
   }   
 
