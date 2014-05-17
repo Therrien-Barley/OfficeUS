@@ -51,6 +51,7 @@ body {
   bottom:20px;
   left:20px;
   width:200px;
+  font:bold 21px/21px Times, "Times New Roman", serif;
   color:red;
 }
 
@@ -60,9 +61,6 @@ body {
   width:100%;
 }
   	
-h1{
-  font:18px/21px Times, "Times New Roman", serif;
-}
 	
 
 
