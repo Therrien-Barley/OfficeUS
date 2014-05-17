@@ -38,66 +38,43 @@ html.win.firefox body { font-size: 99%; }
 .document {
   display: none;
 	width: 100%;
-	}
-
-.ruta-logo a {
-color: black;
-text-decoration: none;
-text-align: right;
-
-}
-
-.ruta-logo a:hover {
-color: black;
-text-decoration: none;
 }
 
 body {
 	margin: 25px;
 	background-color: white;
-	}
+}
+
+#overlay{
+  position:fixed;
+  z-index:100;
+  top:20px;
+  right:20px;
+  width:100px;
+  color:red;
+}
 
 	
-#undermeny {
-	width: 85px;
-	padding: 20px 0 0 0;
-	}
-
-li {
-	padding-bottom: 5px;
-	}
-	
-	
-	p a, p a:visited {
-    text-decoration: none;
-  	color: red;
-  	border-bottom: 1px solid red;
-  	}
-
-  p a:hover {
-    text-decoration: none;
-  	color: black;
-  	border-bottom: 1px solid black;
+#coal{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  height:60px;
+  width:auto;
+  z-index:100;
+}
   	
-  	}
-  	
+h1{
+  font:18px/21px Times, "Times New Roman", serif;
+}
 	
 
-#ruta-logo {
-	position: fixed;
-	top: 60px;
-	right: 40px;
-	z-index: 70px;
-	text-align: center;
-	}
 
 #loading {
   display: none;
 }
 
-#border {
-display: none;
-}
+
 
 #mobile {
   display: inline;
@@ -108,60 +85,7 @@ display: none;
 	font-family: arial, helvetica;   
 }
 
-p {
-  padding-bottom: 1em;
-}
 
-
-#limgif {
-  display: none;	
-		}
-
-#limgif .linklist { 
-background: transparent; 
-}
-
-#limgif .linklist h3.title { 
-		display: none;
-	}
-
-
-#limgif .linklist ul.list li a, #limgif .linklist .list  { 
-	color: red; 
-	font-size: 17px;
-	line-height: 22px;
-	font-weight: normal;
-	font-family: arial, helvetica;
-	border-bottom: 0px;
-	border-top: 0px;
-	text-align:center;
-	list-style:none;
-	list-style-type: none;
-	}
-	
-#limgif .linklist ul, #limgif .linklist li { 
-	list-style-type: none;
-	list-style:none;
-}
-	
-#limgif .linklist ul.list li a:hover { 
-	color: black; 
-	font-weight: normal;
-	border-bottom: 0px;
-	background: transparent; 
-	}
-
-#limgif .linklist .meta  { 
-	display: none;
-	}
-
-#limgif .linklist .buttons { 	
-	display: none;
-	}
-	
-#limgif .linklist .buttons .clone, #limgif .linklist .buttons .reply, #limgif .linklist li .bullet { 
-	display: none;
-	}
 	
   /* ==|== media queries ======================================================
      PLACEHOLDER Media Queries for Responsive Design.
