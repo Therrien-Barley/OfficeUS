@@ -58,8 +58,8 @@ body {
 #coal{
   position:fixed;
   bottom:20px;
-  right:20px;
-  height:60px;
+  left:20px;
+  height:250px;
   width:auto;
   z-index:100;
 }
