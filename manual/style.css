@@ -90,52 +90,44 @@ body {
   @media only screen and (min-width: 480px) {
 
     html, body {
-    	margin: 0px;
-    	background-color: red;
-    width:100%;
-    height:100%;
-    margin:0px;
-    padding:0px
-    border: 3px solid red;
-    	}
-    
-    
-    .document {
-      display: block;      
-    	}
-    		
-  
-      		
-#loading {
-  position: fixed;
-  top: 3px;
-  z-index: 75px;
-  text-align: center;
-  color: #ffffff;
-  width: 100%;
-  display: inline;      	
-}  
-
-#mobile {
-  display: none;  
-}   
-
-a, a:visited {
-  text-decoration: none;
-  color: red;
-  border-bottom: 1px dotted;
-}
-
-a:hover {text-decoration: none;
-  color: blue;
-  -webkit-animation: zooming .85s linear infinite;
-}     
-                  	    		 
-    #mobile img {
-      border: 3px solid blue;
+      margin: 0px;
+      background-color: red;
+      width:100%;
+      height:100%;
+      margin:0px;
+      padding:0px
+      border: 3px solid red;
     }
     
-    
+  .document {
+    display: block;      
   }
+      		
+  #loading {
+    position: fixed;
+    top: 3px;
+    z-index: 75px;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    display: inline;      	
+  }  
+
+  #mobile {
+    display: none;  
+  }   
+
+  a, a:visited {
+    text-decoration: none;
+    color: red;
+    border-bottom: 1px dotted blue;
+  }
+
+  a:hover {text-decoration: none;
+    color: blue;
+    -webkit-animation: zooming .85s linear infinite;
+  }   
+
+}
 
 
