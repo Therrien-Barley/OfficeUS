@@ -48,20 +48,16 @@ body {
 #overlay{
   position:fixed;
   z-index:100;
-  top:20px;
-  right:20px;
-  width:100px;
+  bottom:20px;
+  left:20px;
+  width:200px;
   color:red;
 }
 
 	
 #coal{
-  position:fixed;
-  bottom:20px;
-  left:20px;
-  height:250px;
-  width:auto;
-  z-index:100;
+  height:auto;
+  width:100%;
 }
   	
 h1{
