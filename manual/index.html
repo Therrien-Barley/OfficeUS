@@ -79,12 +79,11 @@
           
           
 
-          var $data = $(data);
-          var $clean = $data.find('body');
+          var $body = $('body', data);
 
-          console.log($clean.html());
+          console.log($body.html());
 
-          var paras = $clean.find('.kix-paragraphrenderer');
+          var paras = $body.find('.kix-paragraphrenderer');
 
           //console.log('length: ' + paras.length);
           //console.dir(paras);
