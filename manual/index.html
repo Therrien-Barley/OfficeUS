@@ -75,7 +75,15 @@
         var gDocURL = 'https://docs.google.com/document/d/1RmjdC0j9zh27DE1Fw2C3dfNDOE4H3mMDyAkWt_uxx60/edit?usp=sharing';
 
         $.get( gDocURL, function( data ) {
-          console.log(data);
+          
+
+          var $data = $(data);
+          var paras = $data.find('.kix-paragraphrenderer');
+
+          console.log('length: ' + paras.length);
+          console.dir(paras);
+
+
           alert( "Load was performed." );
         });
 
