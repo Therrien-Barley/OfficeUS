@@ -76,11 +76,15 @@
 
         $.get( gDocURL, function( data ) {
 
-          console.log(data);
+          
           
 
           var $data = $(data);
-          var paras = $data.find('.kix-paragraphrenderer');
+          var $clean = $data.find('body');
+
+          console.log($clean.html());
+
+          var paras = $clean.find('.kix-paragraphrenderer');
 
           //console.log('length: ' + paras.length);
           //console.dir(paras);
