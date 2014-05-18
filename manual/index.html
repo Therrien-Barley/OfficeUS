@@ -77,9 +77,9 @@
         $.get( gDocURL, function( data ) {
 
           
-          
+          var $data = $(data);
 
-          var $body = $('body', data);
+          var $body = $('body', $data);
 
           console.log($body.html());
 
