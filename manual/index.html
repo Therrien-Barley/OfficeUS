@@ -67,6 +67,25 @@
 			
   </div>
     
+
+    <div id="ajax">
+      <script>
+      $(document).ready(function(){
+
+        var gDocURL = 'https://docs.google.com/document/d/1RmjdC0j9zh27DE1Fw2C3dfNDOE4H3mMDyAkWt_uxx60/edit?usp=sharing';
+
+        $.get( gDocURL, function( data ) {
+          console.log(data);
+          alert( "Load was performed." );
+        });
+
+      });
+        
+      </script>
+
+
+
+    </div>
   
   
 </body>
