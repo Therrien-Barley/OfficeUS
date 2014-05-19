@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<!--
+  Theme by Troy Conrad Therrien of Therrien–Barley for OfficeUS.org
+  github.com/troyth
+-->
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <title>{Title} | {PostSummary}{/block:PostSummary}{block:SearchPage} | {lang:Search results for SearchQuery}{/block:SearchPage}</title>
+        <meta name="description" content="{MetaDescription}" />
+        <meta name="if:Show search" content="1" />
+        <meta name="text:Disqus Shortname" content="" />
+        <meta name="text:Google Analytics ID" content="" />
+        <link rel="shortcut icon" href="{Favicon}" />
+        <link rel="alternate" type="application/rss+xml" title="{Title}" href="{RSS}" />
+
+<!-- Styles -->
+
+<link rel="stylesheet" href="http://static.tumblr.com/f1whv92/Mp9l6ewcg/reset.css" />
+<style type="text/css">
+
+/*----- GENERAL -----*/
+
+    header, footer, section, article, nav, aside {
+        display: block;
+    }
+
+    body {
+        background: #ffffff;
+        color: #222;
+        font: 12px/20px "Times New Roman", Times, serif;
+        padding-top: 25px;
+        margin: 0 auto;
+    }
+
+    #main{
+        text-align: left;
+        margin-left:400px;
+        padding-right:100px;
+
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 48px;
+        padding-bottom: 55px;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .menu{
+        list-style: none;
+        text-align: left;
+    }
+
+    .menu li{
+        display:block;
+        margin-left:5px;
+        margin-bottom:2px;
+    }
+
+
+    #issuesNav{
+        width:100px;
+        height:100%;
+        top:0;
+        left:0;
+        position:fixed;
+        overflow-y:scroll;
+    }
+
+    #issuesNav{
+        color: red;
+    }
+
+    #officesNav{
+        width:100px;
+        height:100%;
+        top:0;
+        left:100px;
+        position:fixed;
+        overflow-y:scroll;
+    }
+
+    #officesNav{
+        color: blue;
+    }
+
+    #typesNav{
+        width:100px;
+        height:50%;
+        top:0;
+        left:200px;
+        position:fixed;
+        overflow-y:scroll;
+    }
+
+    #typesNav a{
+        color: red;
+    }
+
+    #citiesNav{
+        width:100px;
+        height:50%;
+        top:50%;
+        left:200px;
+        position:fixed;
+        overflow-y:scroll;
+        color: blue;
+    }
+
+    #citiesNav a{
+        color: blue;
+    }
+
+{CustomCSS}
+</style>
+
+<!-- Scripts -->
+
+<!--[if IE]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <script src="http://static.tumblr.com/oawavkn/JPAlyq9zp/cufon-yui.js" type="text/javascript"></script>
+     <script src="http://static.tumblr.com/f1whv92/fgIl65bo1/cufon_300.font.js" type="text/javascript"></script>
+
+     <script type="text/javascript">
+        Cufon.replace('h1',{ fontFamily: "Cufon" });
+        Cufon.replace('h2',{ fontFamily: "Cufon" });
+        Cufon.replace('h3',{ fontFamily: "Cufon" });
+        Cufon.replace('#mainNav',{ fontFamily: "Cufon" });
+        Cufon.replace('#siteDescription',{ fontFamily: "Cufon" });
+     </script>
+
+<script>
+     $(function() {
+        var search = $("#txtSearch").val();
+        var placeholder = "Search...";
+        var fadeToOpacity = 0.4;
+        $("#txtSearch").fadeTo("normal", fadeToOpacity);
+        if (search == "") {
+     $("#txtSearch").val(placeholder);
+     }
+     $("#txtSearch").blur(function() {
+        search = $("#txtSearch").val();
+        if (!(search != "" && search != placeholder)) {
+        $("#txtSearch").val(placeholder);
+     }
+     $("#txtSearch").fadeTo("normal", fadeToOpacity);
+     });
+     $("#txtSearch").focus(function() {
+        search = $("#txtSearch").val();
+        if (search == placeholder) {
+        $("#txtSearch").val("");
+     }
+     $("#txtSearch").fadeTo("normal", 1);
+     });
+     $("#btnSearch").click(function() {
+     $("#frmSearch").slideToggle("normal");
+     $(this).toggleClass("active");
+ //  $("#txtSearch").focus();
+     });
+     });
+</script>
+
+</head>
+<body>
+
+    <nav id="issuesNav">
+        <ul class="menu">
+            <li><a href="/tagged/EX-Im" target="_self">EX-Im</a></li>
+            <li><a href="/tagged/Trojan Horses" target="_self">Trojan Horses</a></li>
+            <li><a href="/tagged/Best Practices" target="_self">Best Practices</a></li>
+            <li><a href="/tagged/Crude Ideals" target="_self">Crude Ideals</a></li>
+            <li><a href="/tagged/Democratizing Action" target="_self">Democratizing Action</a></li>
+            <li><a href="/tagged/Intercontinental Comfort" target="_self">Intercontinental Comfort</a></li>
+            <li><a href="/tagged/Reprograming" target="_self">Reprograming</a></li>
+            <li><a href="/tagged/The Invisibles" target="_self">The Invisibles</a></li>
+            <li><a href="/tagged/Global Citizenship" target="_self">Global Citizenship</a></li>
+            <li><a href="/tagged/Magical States" target="_self">Magical States</a></li>
+            <li><a href="/tagged/Smart Concrete" target="_self">Smart Concrete</a></li>
+            <li><a href="/tagged/Anger Love Management" target="_self">Anger Love Management</a></li>
+            <li><a href="/tagged/Profit Margin" target="_self">Profit Margin</a></li>
+            <li><a href="/tagged/Little Americas" target="_self">Little Americas</a></li>
+            <li><a href="/tagged/Code Upgrade " target="_self">Code Upgrade </a></li>
+            <li><a href="/tagged/Cultural Capital" target="_self">Cultural Capital</a></li>
+            <li><a href="/tagged/Cargo Cult" target="_self">Cargo Cult</a></li>
+            <li><a href="/tagged/Housing Public Good" target="_self">Housing Public Good</a></li>
+            <li><a href="/tagged/Bullets Without Ideology" target="_self">Bullets Without Ideology</a></li>
+            <li><a href="/tagged/Superlatives" target="_self">Superlatives</a></li>
+            <li><a href="/tagged/Big Box Rules" target="_self">Big Box Rules</a></li>
+            <li><a href="/tagged/Network Patents" target="_self">Network Patents</a></li>
+            <li><a href="/tagged/Doing Good" target="_self">Doing Good</a></li>
+            <li><a href="/tagged/Around The Clock" target="_self">Around The Clock</a></li>
+            <li><a href="/tagged/Labor Leed" target="_self">Labor Leed</a></li>
+            <li><a href="/tagged/Mission Statement" target="_self">Mission Statement</a></li>
+        </ul>
+    </nav>
+
+    <nav id="officesNav">
+        <ul class="menu">
+            <li><a href="/tagged/officeN">Office01</a></li>
+            <li><a href="/tagged/officeN">Office02</a></li>
+            <li><a href="/tagged/officeN">Office03</a></li>
+            <li><a href="/tagged/officeN">Office04</a></li>
+            <li><a href="/tagged/officeN">Office05</a></li>
+            <li><a href="/tagged/officeN">Office06</a></li>
+            <li><a href="/tagged/officeN">Office07</a></li>
+            <li><a href="/tagged/officeN">Office08</a></li>
+            <li><a href="/tagged/officeN">Office09</a></li>
+            <li><a href="/tagged/officeN">Office10</a></li>
+            <li><a href="/tagged/officeN">Office11</a></li>
+            <li><a href="/tagged/officeN">Office12</a></li>
+            <li><a href="/tagged/officeN">Office13</a></li>
+            <li><a href="/tagged/officeN">Office14</a></li>
+            <li><a href="/tagged/officeN">Office15</a></li>
+            <li><a href="/tagged/officeN">Office16</a></li>
+            <li><a href="/tagged/officeN">Office17</a></li>
+            <li><a href="/tagged/officeN">Office18</a></li>
+            <li><a href="/tagged/officeN">Office19</a></li>
+            <li><a href="/tagged/officeN">Office20</a></li>
+            <li><a href="/tagged/officeN">Office21</a></li>
+            <li><a href="/tagged/officeN">Office22</a></li>
+            <li><a href="/tagged/officeN">Office23</a></li>
+            <li><a href="/tagged/officeN">Office24</a></li>
+            <li><a href="/tagged/officeN">Office25</a></li>
+            <li><a href="/tagged/officeN">Office26</a></li>
+            <li><a href="/tagged/officeN">Office27</a></li>
+            <li><a href="/tagged/officeN">Office28</a></li>
+            <li><a href="/tagged/officeN">Office29</a></li>
+            <li><a href="/tagged/officeN">Office30</a></li>
+            <li><a href="/tagged/officeN">Office31</a></li>
+            <li><a href="/tagged/officeN">Office32</a></li>
+            <li><a href="/tagged/officeN">Office33</a></li>
+            <li><a href="/tagged/officeN">Office34</a></li>
+            <li><a href="/tagged/officeN">Office35</a></li>
+            <li><a href="/tagged/officeN">Office36</a></li>
+            <li><a href="/tagged/officeN">Office37</a></li>
+            <li><a href="/tagged/officeN">Office38</a></li>
+            <li><a href="/tagged/officeN">Office39</a></li>
+            <li><a href="/tagged/officeN">Office40</a></li>
+            <li><a href="/tagged/officeN">Office51</a></li>
+            <li><a href="/tagged/officeN">Office52</a></li>
+            <li><a href="/tagged/officeN">Office53</a></li>
+            <li><a href="/tagged/officeN">Office54</a></li>
+            <li><a href="/tagged/officeN">Office55</a></li>
+            <li><a href="/tagged/officeN">Office56</a></li>
+            <li><a href="/tagged/officeN">Office57</a></li>
+            <li><a href="/tagged/officeN">Office58</a></li>
+            <li><a href="/tagged/officeN">Office59</a></li>
+            <li><a href="/tagged/officeN">Office60</a></li>
+            <li><a href="/tagged/officeN">Office61</a></li>
+            <li><a href="/tagged/officeN">Office62</a></li>
+            <li><a href="/tagged/officeN">Office63</a></li>
+            <li><a href="/tagged/officeN">Office64</a></li>
+            <li><a href="/tagged/officeN">Office65</a></li>
+            <li><a href="/tagged/officeN">Office66</a></li>
+            <li><a href="/tagged/officeN">Office67</a></li>
+            <li><a href="/tagged/officeN">Office68</a></li>
+            <li><a href="/tagged/officeN">Office69</a></li>
+            <li><a href="/tagged/officeN">Office70</a></li>
+            <li><a href="/tagged/officeN">Office71</a></li>
+            <li><a href="/tagged/officeN">Office72</a></li>
+            <li><a href="/tagged/officeN">Office73</a></li>
+            <li><a href="/tagged/officeN">Office74</a></li>
+            <li><a href="/tagged/officeN">Office75</a></li>
+            <li><a href="/tagged/officeN">Office76</a></li>
+            <li><a href="/tagged/officeN">Office77</a></li>
+            <li><a href="/tagged/officeN">Office78</a></li>
+            <li><a href="/tagged/officeN">Office79</a></li>
+            <li><a href="/tagged/officeN">Office80</a></li>
+            <li><a href="/tagged/officeN">Office81</a></li>
+            <li><a href="/tagged/officeN">Office82</a></li>
+            <li><a href="/tagged/officeN">Office83</a></li>
+            <li><a href="/tagged/officeN">Office84</a></li>
+            <li><a href="/tagged/officeN">Office85</a></li>
+            <li><a href="/tagged/officeN">Office86</a></li>
+            <li><a href="/tagged/officeN">Office87</a></li>
+            <li><a href="/tagged/officeN">Office88</a></li>
+            <li><a href="/tagged/officeN">Office89</a></li>
+            <li><a href="/tagged/officeN">Office90</a></li>
+        </ul>
+    </nav>
+
+    <nav id="typesNav">
+        <ul class="menu">
+            <li><a href="/tagged/plan">Plans</a></li>
+            <li><a href="/tagged/section">Sections</a></li>
+            <li><a href="/tagged/elevation">Elevations</a></li>
+            <li><a href="/tagged/axonometric">Axonometrics</a></li>
+            <li><a href="/tagged/rendering">Renderings</a></li>
+            <li><a href="/tagged/perspective">Perspectives</a></li>
+            <li><a href="/tagged/collage">Collages</a></li>
+            <li><a href="/tagged/site">Sites</a></li>
+            <li><a href="/tagged/model">Models</a></li>
+            <li><a href="/tagged/gif">GIFs</a></li>
+            <li><a href="/tagged/video">Video</a></li>
+            <li><a href="/tagged/animation">Animation</a></li>
+            <li><a href="/tagged/quote">Quotes</a></li>
+            <li><a href="/tagged/photo">Photos</a></li>
+        </ul>
+    </nav>
+
+    <nav id="citiesNav">
+        <ul class="menu">
+            <li><a href="/tagged/beijing">Beijing</a></li>
+            <li><a href="/tagged/beirut">Beirut</a></li>
+            <li><a href="/tagged/cairo">Cairo</a></li>
+            <li><a href="/tagged/edinburgh">Edinburgh</a></li>
+            <li><a href="/tagged/helsinki">Helsinki</a></li>
+            <li><a href="/tagged/istanbul">Istanbul</a></li>
+            <li><a href="/tagged/johannesburg">Johannesburg</a></li>
+            <li><a href="/tagged/kiev">Kiev</a></li>
+            <li><a href="/tagged/lima">Lima</a></li>
+            <li><a href="/tagged/mumbai">Mumbai</a></li>
+            <li><a href="/tagged/oslo">Oslo</a></li>
+            <li><a href="/tagged/shanghai">Shanghai</a></li>
+            <li><a href="/tagged/tokyo">Tokyo</a></li>
+            <li><a href="/tagged/vilnius">Vilnius</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    
+
+     <section id="main" class="clearfix">
+
+        <header id="masthead" class="clearfix">
+            <div id="thehead">
+                <h1><a href="/">Office<i>US</i></a></h1>
+                <form action="/search" method="get" id="frmSearch">
+                    <input type="text" id="txtSearch" name="q" value="{SearchQuery}" />
+                </form>           
+            </div>
+        </header>
+
+    <div class="layout">
+        {block:SearchPage}
+            <article>
+               <div>
+                  <div class="searchPage">
+                     <h2>Search results for <a href="{URLSafeSearchQuery}">{SearchQuery}</a></h2>
+                  </div>
+                        {block:NoSearchResults}
+                        <div class="searchPageText">
+                           <p>Iâ€™m sorry, but we couldn't find anything matching "<b>{SearchQuery}</b>". Suggestions:</p>
+                           <ul>
+                              <li>Make sure all words are spelled correctly.</li>
+                              <li>Try different keywords.</li>
+                              <li>Try more general keywords.</li>
+                           </ul>
+                        </div>
+                        {/block:NoSearchResults}
+               </div>
+            </article>
+        {/block:SearchPage}
+
+     {block:TagPage}
+     <article>
+        <div>
+           <div class="searchPage">
+           <h2>Filtered by <a href="{TagURL}">{Tag}</a></h2>
+           </div>
+        </div>
+     </article>
+     {/block:TagPage}
+
+
+
+
+
+
+
+
+{block:Posts}
+     <div>
+        <h5 class="postDate">
+           <abbr>{block:Date}<a href="{Permalink}">{DayOfMOnth}{DayOfMonthSuffix} {ShortMonth} {Year}</a>{/block:Date}{block:NoteCount} | <a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount} {block:IfDisqusShortname}| <a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a>
+<script type="text/javascript">
+    var disqus_shortname = '{text:Disqus Shortname}';
+
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+{/block:IfDisqusShortname}
+           </abbr>
+        </h5>
+     </div>
+
+     <article>
+        <div>
+           {block:Text}
+              {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+              {Body}
+           {/block:Text}
+
+           {block:Photo}
+              {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
+              {block:Caption}<div class="photoCaption">{Caption}</div>{/block:Caption}
+           {/block:Photo}
+
+           {block:Photoset}
+              <div class="media">{Photoset-500}</div>
+              {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+           {/block:Photoset}
+
+           {block:Quote}
+              <div id="quoteText"><h2>{Quote}</h2></div>
+              {block:Source}<div id="quoteSource"><p>&mdash;{Source}</p></div>{/block:Source}
+           {/block:Quote}
+
+           {block:Link}
+              <h2><a href="{URL}" {Target}>{Name}</a></h2>
+              {block:Description}
+              <div>{Description}</div>
+              {/block:Description}
+           {/block:Link}
+
+          {block:Chat}
+             {block:Title}<h2>{Title}</h2>{/block:Title}
+             <ul class="chat">
+                {block:Lines}
+                <li>{block:Label}<strong>{Label}</strong>{/block:Label} {Line}</li>
+                {/block:Lines}
+             </ul>
+          {/block:Chat}
+
+          {block:Audio}
+             <div class="audioleft">
+                <div class="audioc">
+                <div class="audio">{AudioPlayerBlack}</div>
+                </div>
+             </div>
+             <div class="audioright">
+                <div class="audioCaption">{block:Artist}<b>{Artist}</b>{/block:Artist}
+<p>&mdash;{block:TrackName}{TrackName}{/block:TrackName}</p>
+                </div>
+             </div>
+             <div class="audioClear"></div>
+             <div class="audioContainer">
+                {block:Caption}{Caption}{/block:Caption}
+             </div>
+          {/block:Audio}
+
+          {block:Video}
+             <div class="media">{Video-500}</div>
+             {block:Caption}<div>{Caption}</div>{/block:Caption}
+          {/block:Video}
+
+          {block:Answer}
+             <h3>{Asker} asked: {Question}</h3>
+             {Answer}
+          {/block:Answer}
+
+          {block:Date}
+
+          {block:PostNotes}
+             {PostNotes}
+          {/block:PostNotes}
+
+          {block:Date}
+
+        </div>
+     </article>
+{/block:Posts}
+
+{block:PermalinkPage}
+{block:IfDisqusShortname}
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = '{text:Disqus Shortname}';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+{/block:IfDisqusShortname}
+{/block:PermalinkPage}
+
+     {block:PermalinkPagination}
+        <nav id="pageNav">
+           <ul class="clearfix">
+              {block:PreviousPost}<li><a href="{PreviousPost}" id="pageNavNewer">Previous</a></li>{/block:PreviousPost}
+              {block:NextPost}<li><a href="{NextPost}" id="pageNavOlder">Next</a></li>{/block:NextPost}
+           </ul>
+        </nav>
+     {/block:PermalinkPagination}
+
+     {block:Pagination}
+        <nav id="pageNav">
+           <ul class="clearfix">
+             {block:PreviousPage}<li><a href="{PreviousPage}" id="pageNavNewer">Newer</a></li>{/block:PreviousPage}
+             {block:JumpPagination length="5"}
+             {block:CurrentPage}<li><a href="{URL}" class="active">{PageNumber}</a></li>{/block:CurrentPage}
+             {block:JumpPage}<li><a href="{URL}">{PageNumber}</a></li>{/block:JumpPage}
+             {/block:JumpPagination}
+             {block:NextPage}<li><a href="{NextPage}" id="pageNavOlder">Older</a></li>{/block:NextPage}
+           </ul>
+        </nav>
+     {/block:Pagination}
+
+     {block:DayPagination}
+        <nav id="pageNav">
+           <ul class="clearfix">
+              {block:PreviousDayPage}<li><a href="{PreviousDayPage}">&laquo; {DayOfMonth} {ShortMonth}</a></li>{/block:PreviousDayPage}{block:NextDayPage}|<li><a href="{NextDayPage}">{DayOfMonth} {ShortMonth} &raquo;</a></li>{block:NextDayPage}
+           </ul>
+        </nav>
+     {/block:DayPagination}
+
+     </div><!-- END layout -->
+     </section>
+
+     <footer id="sitemeta">
+        <div class="clearfix">
+           <div class="thefooter">
+              <p>The Minimalist Theme designed by <a href="http://www.pixelunion.net?utm_source=tumblr&utm_medium=link&utm_campaign=minimalist">Pixel Union</a> | Powered by <a href="http://tumblr.com">Tumblr</a></p>
+           </div>
+        </div>
+     </footer>
+
+     {block:IfGoogleAnalyticsID}
+        <script type="text/javascript">var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try{var pageTracker=_gat._getTracker("{text:Google Analytics ID}");pageTracker._trackPageview()}catch(err){}</script>
+     {block:IfGoogleAnalyticsID}
+
+</body>
+</html>
