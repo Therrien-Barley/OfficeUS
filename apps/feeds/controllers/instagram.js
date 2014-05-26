@@ -25,9 +25,9 @@ exports.fetch = function(res){
 			console.log('instagram.js::fetch() err with msg: ' + err);
 		}else{
 			console.log('instagram.js::'.cyan + 'returned from fetch() with: \n');
-			console.dir(medias);
+			console.dir(medias[0]);
 
-			res.render('feeds', { title: 'OfficeUS Outposts', result: medias });
+			res.render('feeds', { title: 'OfficeUS Outposts', result: medias[0] });
 		}
 	});
 };
