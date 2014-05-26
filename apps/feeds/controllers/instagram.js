@@ -48,7 +48,7 @@ var fetchHandler = function(err, medias, pagination, limit, next) {
 exports.fetch = function(result){
 	res = result;
 	image_array = [];//clear image_array
-	ig.tag_media_recent( 'architecture', fetchHandler );
+	ig.tag_media_recent( 'beach', fetchHandler );
 };
 
 
