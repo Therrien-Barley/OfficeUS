@@ -27,7 +27,7 @@ var fetchHandler = function(err, medias, pagination, limit) {
 		console.log('instagram.js::'.cyan + 'returned from fetch() with: \n');
 		
 
-		image_array.push(medias);
+		image_array.concat(medias);
 
 		console.log(image_array.length);
 
