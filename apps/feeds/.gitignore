@@ -1,0 +1,7 @@
+.DS_Store
+.bower-*/
+.idea/
+node_modules/
+public/lib
+
+secrets.json
