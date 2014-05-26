@@ -29,7 +29,7 @@ var fetchHandler = function(err, medias, pagination, limit) {
 
 		image_array.push(medias);
 
-		if(pagination.next && (medias.length < 100) ){
+		if(pagination.next && (image_array.length < 100) ){
 			pagination.next( fetchHandler );
 		}else{
 			res.render('feeds', { title: 'OfficeUS Outposts', medias: image_array });
