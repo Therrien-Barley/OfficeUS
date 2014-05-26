@@ -25,9 +25,11 @@ var fetchHandler = function(err, medias, pagination, limit) {
 		console.log('instagram.js::fetchHandler() err with msg: ' + err);
 	}else{
 		console.log('instagram.js::'.cyan + 'returned from fetch() with: \n');
-		console.dir(pagination);
+		
 
 		image_array.push(medias);
+
+		console.log(image_array.length);
 
 		if(pagination.next && (image_array.length < 100) ){
 			pagination.next( fetchHandler );
