@@ -19,7 +19,7 @@ ig.use({ client_id: instagram_secrets.client_id,
 // Polls Instagram API to see if there are any updates
 // if so, stores them in the mongodb
 exports.fetch = function(res){
-	ig.tag_media_recent('architecture', function(err, medias, pagination, limit) {});
+	ig.tag_media_recent('architecture', function(err, medias, pagination, limit) {
 
 		if(err){
 			console.log('instagram.js::fetch() err with msg: ' + err);
