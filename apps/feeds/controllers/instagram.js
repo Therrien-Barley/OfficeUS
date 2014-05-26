@@ -17,11 +17,11 @@ ig.use({ client_id: instagram_secrets.client_id,
 
 var image_array = [];
 
-var first = true;
+var res;//global for the res
 
 
 
-var fetchHandler = function(err, medias, pagination, limit) {
+var fetchHandler = function(err, medias, pagination, limit, next) {
   // Your implementation here
   if(err){
 		console.log('instagram.js::'.cyan + 'fetchHandler() err with msg: ' + err);
@@ -46,6 +46,7 @@ var fetchHandler = function(err, medias, pagination, limit) {
 // Polls Instagram API to see if there are any updates
 // if so, stores them in the mongodb
 exports.fetch = function(res){
+	res = res;
 	ig.tag_media_recent( 'architecture', fetchHandler );
 };
 
