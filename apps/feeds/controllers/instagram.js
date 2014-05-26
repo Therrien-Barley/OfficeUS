@@ -17,6 +17,8 @@ ig.use({ client_id: instagram_secrets.client_id,
 
 var image_array = [];
 
+var first = true;
+
 
 
 var fetchHandler = function(err, medias, pagination, limit) {
@@ -26,8 +28,12 @@ var fetchHandler = function(err, medias, pagination, limit) {
 	}else{
 		console.log('instagram.js::'.cyan + 'returned from fetch() with: \n');
 		
+		if(image_array.length == 0){
+			image_array.push(medias);
+		}else{
+			image_array.concat(medias);
+		}
 
-		image_array.concat(medias);
 
 		console.log(image_array.length);
 
