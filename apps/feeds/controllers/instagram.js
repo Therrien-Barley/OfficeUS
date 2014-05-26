@@ -15,6 +15,27 @@ ig.use({ client_id: instagram_secrets.client_id,
 /////// END INSTAGRAM
 
 
+
+// Polls Instagram API to see if there are any updates
+// if so, stores them in the mongodb
+exports.fetch = function(res){
+	ig.tag('architecture', function(err, result, limit) {
+
+		if(err){
+			console.log('instagram.js::fetch() err with msg: ' + err);
+		}else{
+			console.log('instagram.js::'.cyan + 'returned from fetch() with: \n');
+			console.dir(result);
+
+			res.render('feeds', { title: 'OfficeUS Outposts', result: result });
+		}
+	});
+};
+
+
+
+
+
 exports.test = function(){
 	console.log('ig.test()'.cyan);
 };

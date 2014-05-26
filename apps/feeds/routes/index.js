@@ -11,7 +11,5 @@ exports.index = function(req, res){
 
 exports.instagram = function(req, res){
 
-	ig.test();
-
-	res.render('feeds', { title: 'OfficeUS Outposts' });
+	ig.fetch(res);
 }
