@@ -24,15 +24,11 @@ var first = true;
 var fetchHandler = function(err, medias, pagination, limit) {
   // Your implementation here
   if(err){
-		console.log('instagram.js::fetchHandler() err with msg: ' + err);
+		console.log('instagram.js::'.cyan + 'fetchHandler() err with msg: ' + err);
 	}else{
 		console.log('instagram.js::'.cyan + 'returned from fetch() with: \n');
-		
-		if(image_array.length == 0){
-			image_array.push(medias);
-		}else{
-			image_array.concat(medias);
-		}
+
+		image_array = image_array.concat(medias);
 
 
 		console.log(image_array.length);
