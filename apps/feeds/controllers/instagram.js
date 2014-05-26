@@ -45,8 +45,8 @@ var fetchHandler = function(err, medias, pagination, limit, next) {
 
 // Polls Instagram API to see if there are any updates
 // if so, stores them in the mongodb
-exports.fetch = function(res){
-	res = res;
+exports.fetch = function(result){
+	res = result;
 	ig.tag_media_recent( 'architecture', fetchHandler );
 };
 
