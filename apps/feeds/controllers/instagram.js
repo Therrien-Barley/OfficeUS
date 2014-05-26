@@ -25,7 +25,7 @@ exports.fetch = function(res){
 			console.log('instagram.js::fetch() err with msg: ' + err);
 		}else{
 			console.log('instagram.js::'.cyan + 'returned from fetch() with: \n');
-			console.dir(medias[0]);
+			console.dir(pagination);
 
 			res.render('feeds', { title: 'OfficeUS Outposts', medias: medias });
 		}
