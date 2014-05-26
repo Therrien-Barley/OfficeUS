@@ -19,7 +19,7 @@ var image_array = [];
 
 
 
-var fetchHandler = function(err, result, pagination, limit) {
+var fetchHandler = function(err, medias, pagination, limit) {
   // Your implementation here
   if(err){
 		console.log('instagram.js::fetchHandler() err with msg: ' + err);
