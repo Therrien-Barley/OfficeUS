@@ -47,6 +47,7 @@ var fetchHandler = function(err, medias, pagination, limit, next) {
 // if so, stores them in the mongodb
 exports.fetch = function(result){
 	res = result;
+	image_array = [];//clear image_array
 	ig.tag_media_recent( 'architecture', fetchHandler );
 };
 
