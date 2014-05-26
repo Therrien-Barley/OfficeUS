@@ -13,3 +13,8 @@ var instagram_secrets = require('../secrets.json').instagram;
 ig.use({ client_id: instagram_secrets.client_id,
     client_secret: instagram_secrets.client_secret });
 /////// END INSTAGRAM
+
+
+exports.test = function(){
+	console.log('ig.test()'.cyan);
+};
